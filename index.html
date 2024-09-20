@@ -1,10 +1,67 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Coding Accomplishments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Coding Journey</h1>
+        <p>Welcome to my portfolio! Here you’ll find some of the coolest projects I’ve worked on.</p>
+    </header>
 
-<html>
-  <head>
-    <title>Fortnight</title>
-  </head>
-  <body>
-    
-  </body>
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>I'm a passionate developer skilled in multiple technologies. From Minecraft modding to cryptocurrency tracking apps, I love building projects that solve real-world problems.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Minecraft Modding (Java, Forge)</li>
+            <li>Cryptocurrency API Integration</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Cryptocurrency Tracker</h3>
+            <p>A real-time system that tracks the price of Litecoin, constantly updated and displayed in a system tray.</p>
+            <button onclick="toggleDescription('crypto')">See More</button>
+            <div id="crypto" class="description" style="display:none;">
+                <p>Developed using JavaScript, this project fetches live data using APIs and keeps track of the price fluctuations.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Minecraft Forge Mod</h3>
+            <p>A custom mod built using Forge 1.20.1 that adds new tools, weapons, and game mechanics.</p>
+            <button onclick="toggleDescription('minecraft')">See More</button>
+            <div id="minecraft" class="description" style="display:none;">
+                <p>Incorporated new tools like the Purpur Dagger, with custom right-click behaviors.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Cryptocurrency Price Display</h3>
+            <p>Integrated SVG icons to display cryptocurrency prices dynamically on a website.</p>
+            <button onclick="toggleDescription('priceDisplay')">See More</button>
+            <div id="priceDisplay" class="description" style="display:none;">
+                <p>Leveraged SVGs and APIs to create an interactive and visually appealing display of real-time data.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thanks for visiting! Connect with me on <a href="https://github.com/">GitHub</a>.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
